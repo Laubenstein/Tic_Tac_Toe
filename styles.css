@@ -1,1 +1,18 @@
-
+h1 {
+  text-align: center;
+}
+.field {
+  background-color: rosybrown;
+  width: calc(90%/3);
+  height: calc(90%/3);
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+  margin: 5px;
+}
+#boardContainer {
+  height: 600px;
+  width: 600px;
+  text-align: center;
+  margin: auto;
+}
