@@ -1,8 +1,8 @@
 const gameBoard = (() => {
-  let boardValues = ["x","x","o","o","x","o","o","o","o"];
+  let boardValues = ["","","","","","","","",""];
   const getValues = () => boardValues;
   const setValue = (a, value) => boardValues[a] = value;
-  const makeBoard = () => { 
+  const makeBoard = () => {
     for (let i = 0; i < boardValues.length; i++) {
       let boardContainer = document.querySelector('#boardContainer');
       let field = document.createElement('div');
@@ -13,14 +13,14 @@ const gameBoard = (() => {
     };
   };
   return {
-    getValues, 
-    setValue, 
+    getValues,
+    setValue,
     makeBoard
   };
 })();
 
 const displayController = (() => {
-  
+
 })();
 
 const player = (name, color) => {
@@ -31,4 +31,5 @@ const player = (name, color) => {
 const player1 = player('player1', 'x');
 const player2 = player('player2', 'o');
 gameBoard.makeBoard();
+gameBoard.setValue(1, player1.getColor());
 console.log(gameBoard.getValues());
