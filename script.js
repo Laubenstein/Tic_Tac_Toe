@@ -21,6 +21,7 @@ const GameBoard = (() => {
           buttonElement.value = DisplayController.currentPlayer().getColor();
           buttonElement.textContent = DisplayController.currentPlayer().getColor();
           DisplayController.changePlayer();
+          this.disabled = true;
         });
         boardContainer.appendChild(buttonElement);
         buttonID++;
@@ -52,9 +53,12 @@ const DisplayController = (() => {
       activePlayer = player1;
     }
   };
-  return {currentPlayer, changePlayer};
+  const startGame = () => GameBoard.makeBoard();
+  const checkWinner = () => {
+    for (let i = 0; i < )
+  }
+  return {currentPlayer, changePlayer, startGame};
 })();
 
 
-
-GameBoard.makeBoard();
+DisplayController.startGame();
