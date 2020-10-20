@@ -1,19 +1,38 @@
-h1 {
+body {
+  background-color: #2E4159;
+}
+
+h1, h2 {
   text-align: center;
+  color: #8F8EBF;
+  font-size: 50px;
+  font-family: 'Roboto Slab', serif;
 }
 .buttonElement {
-  background-color: green;
-  color: black;
-  width: calc(90%/3);
-  height: calc(90%/3);
-  border: 1px solid black;
+  background-color: #2E4159;
+  font-size: 60px;
+  color: #8F8EBF;
   text-align: center;
-  display: inline-block;
-  margin: 5px;
+  margin: 0px;
+  padding: 0;
+  flex: 0 0 33%;
+  height: 200px;
+  border: 5px solid #8F8EBF;
 }
+
 #boardContainer {
-  height: 600px;
-  width: 600px;
-  text-align: center;
   margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 600px;
+  height: 600px;
+  border: 0px solid #8F8EBF
+}
+
+#inputContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
